@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container bg-black text-center p-5 ">
+    <h1>This are the predicted results!!!</h1>
+    <hr>
+    <h5>Actual closing price of <strong >{{ stock }}</strong> for the date {{date}} will be: <br>
+        <br><strong class="btn btn-success">{{actual_price}}</strong>
+    </h5>
+    <hr>
+    <h5>Predicted price of <strong>{{ stock }}</strong> for the date {{date}} will be: <br>
+        <br><strong class="btn btn-success">{{prediction}}</strong>
+    </h5>
+    <hr>
+</div>
+
+{% endblock content %}
